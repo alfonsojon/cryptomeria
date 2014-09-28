@@ -1,0 +1,88 @@
+#page-index {
+    h1 .sub {
+        font-family: @UIHelveticaFontFamily;
+        font-weight: normal;
+        color: #888;
+        font-size: 20px;
+        margin: 36px auto 5px auto;
+    }
+    
+    h1 .main {
+        font-family: @UITitleFontFamily;
+        font-weight: normal;
+        color: #222;
+        font-size: 44px;
+        margin: 5px auto 42px auto;
+    }
+    
+    h2 {
+        font-family: @UITitleFontFamily;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 3px;
+        text-align: center;
+        font-family: @UIHelveticaFontFamily;
+        font-weight: 100;
+        font-size: 16px;
+        color: #aaa;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+    
+    #content {
+        box-shadow: 2px 2px 0 #ddd;
+    }
+    
+    .hero {
+        font-family: @JapaneseMinchoFontFamily;
+        font-size: 220px;
+        line-height: 220px;
+        height: 160px;
+        overflow: hidden;
+        margin: -20px auto -23px 0;
+        text-shadow: -2px -2px 0 #ddd;
+        color: #eee;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #achievement-hall {
+        display: none;
+        padding: 0;
+        li {
+            float: left;
+            width: 100px;
+            height: 115px;
+            margin: 5px 0 0 11px;
+            list-style: none;
+            
+            .icon {
+                width: 80px;
+                height: 80px;
+                margin: auto;
+            }
+            
+            p {
+                margin: 0;
+                &.info {
+                    display: none;
+                    color: #777;
+                    font-size: 9px;
+                    line-height: 13px;
+                }
+                &.title {
+                    font-size: 11px;
+                    color: #aaa;
+                }
+            }
+            
+            &:hover {
+                p.info {
+                    display: block;
+                }
+                p.title {
+                    display: none;
+                }
+            }
+        }
+    }
+}
